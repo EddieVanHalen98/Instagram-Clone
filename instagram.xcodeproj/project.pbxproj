@@ -56,9 +56,12 @@
 		7ACEE87923BE018D00F64470 /* instagram */ = {
 			isa = PBXGroup;
 			children = (
+				7ACEE88E23BE021500F64470 /* View */,
+				7ACEE89423BE026000F64470 /* Model */,
+				7ACEE89523BE027400F64470 /* ViewModel */,
+				7ACEE89623BE029A00F64470 /* Service */,
 				7ACEE87A23BE018D00F64470 /* AppDelegate.swift */,
 				7ACEE87C23BE018D00F64470 /* SceneDelegate.swift */,
-				7ACEE87E23BE018D00F64470 /* ContentView.swift */,
 				7ACEE88023BE018E00F64470 /* Assets.xcassets */,
 				7ACEE88523BE018E00F64470 /* LaunchScreen.storyboard */,
 				7ACEE88823BE018E00F64470 /* Info.plist */,
@@ -73,6 +76,75 @@
 				7ACEE88323BE018E00F64470 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7ACEE88E23BE021500F64470 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEE87E23BE018D00F64470 /* ContentView.swift */,
+				7ACEE89323BE025600F64470 /* Log In */,
+				7ACEE88F23BE022C00F64470 /* Feed */,
+				7ACEE89023BE023600F64470 /* Search */,
+				7ACEE89223BE024100F64470 /* Profile */,
+				7ACEE89123BE023C00F64470 /* Notifications */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7ACEE88F23BE022C00F64470 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		7ACEE89023BE023600F64470 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		7ACEE89123BE023C00F64470 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		7ACEE89223BE024100F64470 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7ACEE89323BE025600F64470 /* Log In */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Log In";
+			sourceTree = "<group>";
+		};
+		7ACEE89423BE026000F64470 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7ACEE89523BE027400F64470 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7ACEE89623BE029A00F64470 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
