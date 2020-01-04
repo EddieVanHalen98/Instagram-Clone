@@ -9,8 +9,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+            FeedView()
+            .tabItem {
+                Image(systemName: "square.stack.3d.up")
+                Text("Feed")
+            }
+            
+            Text("Search")
+            .tabItem {
+                Image(systemName: "magnifyingglass")
+                Text("Search")
+            }
+            
+            Text("Notifications")
+            .tabItem {
+                Image(systemName: "bell")
+                Text("Notifications")
+            }
+            
+            Text("Profile")
+            .tabItem {
+                Image(systemName: "person")
+                Text("Profile")
+            }
+        }.accentColor(Color("accent"))
     }
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A2664D023BF61DA0067C0C2 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2664CF23BF61DA0067C0C2 /* FeedView.swift */; };
+		7A2664D223BF658F0067C0C2 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2664D123BF658F0067C0C2 /* PostView.swift */; };
 		7ACEE87B23BE018D00F64470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEE87A23BE018D00F64470 /* AppDelegate.swift */; };
 		7ACEE87D23BE018D00F64470 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEE87C23BE018D00F64470 /* SceneDelegate.swift */; };
 		7ACEE87F23BE018D00F64470 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEE87E23BE018D00F64470 /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A2664CF23BF61DA0067C0C2 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		7A2664D123BF658F0067C0C2 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		7ACEE87723BE018D00F64470 /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACEE87A23BE018D00F64470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ACEE87C23BE018D00F64470 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 		7ACEE88F23BE022C00F64470 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				7A2664CF23BF61DA0067C0C2 /* FeedView.swift */,
+				7A2664D123BF658F0067C0C2 /* PostView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -218,8 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2664D023BF61DA0067C0C2 /* FeedView.swift in Sources */,
 				7ACEE87B23BE018D00F64470 /* AppDelegate.swift in Sources */,
 				7ACEE87D23BE018D00F64470 /* SceneDelegate.swift in Sources */,
+				7A2664D223BF658F0067C0C2 /* PostView.swift in Sources */,
 				7ACEE87F23BE018D00F64470 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
