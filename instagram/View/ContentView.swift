@@ -10,32 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var isLoggedIn = false
+    
     var body: some View {
-        TabView {
-            FeedView()
-            .tabItem {
-                Image(systemName: "square.stack.3d.up")
-                Text("Feed")
+        Group {
+            if isLoggedIn {
+                AppView()
+            } else {
+                LoginView(isLoggedIn: $isLoggedIn)
             }
-            
-            Text("Search")
-            .tabItem {
-                Image(systemName: "magnifyingglass")
-                Text("Search")
-            }
-            
-            Text("Notifications")
-            .tabItem {
-                Image(systemName: "bell")
-                Text("Notifications")
-            }
-            
-            Text("Profile")
-            .tabItem {
-                Image(systemName: "person")
-                Text("Profile")
-            }
-        }.accentColor(Color("accent"))
+        }
     }
 }
 
