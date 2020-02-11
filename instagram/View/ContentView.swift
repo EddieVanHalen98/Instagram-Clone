@@ -19,6 +19,8 @@ struct ContentView: View {
             } else {
                 LoginView(isLoggedIn: $isLoggedIn)
             }
+        }.onAppear {
+            self.isLoggedIn = APIGateway.shared.loggedIn
         }
     }
 }

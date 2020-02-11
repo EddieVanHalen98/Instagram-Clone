@@ -14,6 +14,9 @@
 		7A01A09A23C74D18004DC88C /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01A09923C74D18004DC88C /* ActivityIndicator.swift */; };
 		7A2664D023BF61DA0067C0C2 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2664CF23BF61DA0067C0C2 /* FeedView.swift */; };
 		7A2664D223BF658F0067C0C2 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2664D123BF658F0067C0C2 /* PostView.swift */; };
+		7A2A498223F1774A00FCE101 /* APIGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A498123F1774A00FCE101 /* APIGateway.swift */; };
+		7A2A498523F1799E00FCE101 /* URLResponse+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A498423F1799E00FCE101 /* URLResponse+Ext.swift */; };
+		7A2A498723F17C7A00FCE101 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A498623F17C7A00FCE101 /* User.swift */; };
 		7ACEE87B23BE018D00F64470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEE87A23BE018D00F64470 /* AppDelegate.swift */; };
 		7ACEE87D23BE018D00F64470 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEE87C23BE018D00F64470 /* SceneDelegate.swift */; };
 		7ACEE87F23BE018D00F64470 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEE87E23BE018D00F64470 /* ContentView.swift */; };
@@ -30,6 +33,9 @@
 		7A01A09923C74D18004DC88C /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		7A2664CF23BF61DA0067C0C2 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		7A2664D123BF658F0067C0C2 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		7A2A498123F1774A00FCE101 /* APIGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGateway.swift; sourceTree = "<group>"; };
+		7A2A498423F1799E00FCE101 /* URLResponse+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLResponse+Ext.swift"; sourceTree = "<group>"; };
+		7A2A498623F17C7A00FCE101 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7ACEE87723BE018D00F64470 /* instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACEE87A23BE018D00F64470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ACEE87C23BE018D00F64470 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,14 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		7A2A498323F1798200FCE101 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7A2A498423F1799E00FCE101 /* URLResponse+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		7ACEE86E23BE018D00F64470 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +98,7 @@
 				7ACEE89423BE026000F64470 /* Model */,
 				7ACEE89523BE027400F64470 /* ViewModel */,
 				7ACEE89623BE029A00F64470 /* Service */,
+				7A2A498323F1798200FCE101 /* Extension */,
 				7ACEE87A23BE018D00F64470 /* AppDelegate.swift */,
 				7ACEE87C23BE018D00F64470 /* SceneDelegate.swift */,
 				7ACEE88023BE018E00F64470 /* Assets.xcassets */,
@@ -158,6 +173,7 @@
 		7ACEE89423BE026000F64470 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7A2A498623F17C7A00FCE101 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +188,7 @@
 		7ACEE89623BE029A00F64470 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				7A2A498123F1774A00FCE101 /* APIGateway.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -247,16 +264,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2A498723F17C7A00FCE101 /* User.swift in Sources */,
 				7A01A09123C745E8004DC88C /* LoginView.swift in Sources */,
 				7A2664D023BF61DA0067C0C2 /* FeedView.swift in Sources */,
 				7A01A09623C748E0004DC88C /* InstagramTextField.swift in Sources */,
 				7ACEE87B23BE018D00F64470 /* AppDelegate.swift in Sources */,
 				7A01A09323C745F9004DC88C /* AppView.swift in Sources */,
 				7A01A09823C74A94004DC88C /* ActionButton.swift in Sources */,
+				7A2A498523F1799E00FCE101 /* URLResponse+Ext.swift in Sources */,
 				7A01A09A23C74D18004DC88C /* ActivityIndicator.swift in Sources */,
 				7ACEE87D23BE018D00F64470 /* SceneDelegate.swift in Sources */,
 				7A2664D223BF658F0067C0C2 /* PostView.swift in Sources */,
 				7ACEE87F23BE018D00F64470 /* ContentView.swift in Sources */,
+				7A2A498223F1774A00FCE101 /* APIGateway.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -54,11 +54,49 @@ struct LoginView: View {
     }
     
     func register() {
+        withAnimation { self.isLoading = true }
         
+        APIGateway.shared.register(with: email, password, username) { response in
+            withAnimation { self.isLoading = false }
+            
+            guard response == .success else {
+                self.failure(with: response)
+                return
+            }
+            
+            self.success(username: self.username, avatarPath: "")
+        }
     }
     
     func login() {
+        withAnimation { self.isLoading = true }
         
+        APIGateway.shared.login(with: email, password) { user, response in
+            withAnimation { self.isLoading = false }
+            
+            guard response == .success else {
+                self.failure(with: response)
+                return
+            }
+            
+            self.success(username: user!.username, avatarPath: user!.avatarPath)
+        }
+    }
+    
+    func failure(with response: APIResponse) {
+        UINotificationFeedbackGenerator().notificationOccurred(.error)
+        
+        errorMessage = response.rawValue
+        showErrorDialog = true
+    }
+    
+    func success(username: String, avatarPath: String) {
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
+        
+        UserDefaults.standard.set(username, forKey: "username")
+        UserDefaults.standard.set(avatarPath, forKey: "avatarPath")
+        
+        isLoggedIn = true
     }
 }
 
